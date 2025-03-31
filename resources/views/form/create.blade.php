@@ -11,25 +11,25 @@
     <form action="{{ route('form.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
 
-        <!-- Name -->
+        
         <div class="mb-3">
             <label>Name:</label>
             <input type="text" name="name" class="form-control" required>
         </div>
 
-        <!-- Email -->
+       
         <div class="mb-3">
             <label>Email:</label>
             <input type="email" name="email" class="form-control" required>
         </div>
 
-        <!-- File Upload -->
+        
         <div class="mb-3">
             <label>Upload File:</label>
             <input type="file" name="file" class="form-control">
         </div>
 
-        <!-- Dynamic Item Fields -->
+        
         <h4>Items</h4>
         <table class="table" id="itemsTable">
             <thead>
@@ -54,7 +54,7 @@
     </form>
 </div>
 
-<!-- Add Dynamic Rows Script -->
+
 <script>
     let rowIndex = 1;
 
